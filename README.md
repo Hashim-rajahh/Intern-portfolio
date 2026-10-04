@@ -13,7 +13,7 @@ A responsive one-page portfolio for Hashim Anwar, a BSc Computer Science student
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/intern-portfolio.git
+   git clone https://github.com/Hashim-rajahh/Intern-portfolio.git
    cd intern-portfolio
    ```
 2. Open `index.html` in your browser. No build step is needed.
@@ -40,7 +40,7 @@ Check the **Actions** tab on GitHub to see the result of each run.
 ## Live site
 
 Enabled with GitHub Pages (Settings, Pages, deploy from the `main` branch, root folder):
-`https://YOUR-USERNAME.github.io/intern-portfolio/`
+`https://Hashim-rajahh.github.io/Intern-portfolio/`
 
 ## Project structure
 
