@@ -2,18 +2,18 @@
 
 A responsive one-page portfolio for Hashim Anwar, a BSc Computer Science student at Lahore Leads University. It was built as a first-day internship task to practise clean HTML and CSS, Git commits, and automated linting with GitHub Actions.
 
-# What the project includes
+## What the project includes
 
 - A home page (`index.html`) with About, Skills, Experience and Contact sections
-- Responsive styling (`styles.css`) for mobile, tablet and desktop
+- Responsive styling (`style.css`) for mobile, tablet and desktop
 - Valid, accessible HTML: one `h1`, landmarks, skip link, visible keyboard focus
 - A CI workflow that lints the HTML and CSS on every push
 
-# Setup steps
+## Setup steps
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Hashim-rajahh/intern-portfolio.git
+   git clone https://github.com/YOUR-USERNAME/intern-portfolio.git
    cd intern-portfolio
    ```
 2. Open `index.html` in your browser. No build step is needed.
@@ -28,33 +28,33 @@ A responsive one-page portfolio for Hashim Anwar, a BSc Computer Science student
    npm run lint
    ```
 
-# Continuous integration
+## Continuous integration
 
 The workflow in `.github/workflows/lint.yml` runs on every push and pull request. It installs the dev dependencies and runs:
 
 - **HTMLHint** on `index.html`
-- **Stylelint** (standard config) on `styles.css`
+- **Stylelint** (standard config) on `style.css`
 
 Check the **Actions** tab on GitHub to see the result of each run.
 
-# Live site
+## Live site
 
 Enabled with GitHub Pages (Settings, Pages, deploy from the `main` branch, root folder):
-`https://Hashim-rajahh.github.io/Intern-portfolio/`
+`https://YOUR-USERNAME.github.io/intern-portfolio/`
 
-# Project structure
+## Project structure
 
 ```
 intern-portfolio/
 ├── .github/workflows/lint.yml   CI workflow
 ├── index.html                   Home page
-├── styles.css                   Responsive styles
+├── style.css                    Responsive styles
 ├── package.json                 Lint scripts and dev dependencies
 ├── .htmlhintrc                  HTMLHint rules
 ├── .stylelintrc.json            Stylelint config
 └── README.md
 ```
 
-# Author
+## Author
 
 Hashim Anwar
