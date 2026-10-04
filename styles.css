@@ -1,0 +1,284 @@
+:root {
+  --paper: #f1f4f6;
+  --ink: #13202b;
+  --muted: #4a5a68;
+  --cobalt: #2346d6;
+  --sky: #cfdaf7;
+  --amber: #f0a81c;
+  --heading-font: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body-font: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body-font);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+}
+
+a {
+  color: var(--cobalt);
+}
+
+:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  padding: 0.5rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding: 1rem 1.25rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.brand {
+  font-family: var(--heading-font);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section {
+  max-width: 44rem;
+  padding: 2.5rem 0;
+  border-top: 2px solid var(--sky);
+}
+
+.section h2 {
+  font-size: 1.75rem;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  gap: 2rem;
+  padding: 2.5rem 0 3rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.25rem, 8vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  max-width: 34rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--cobalt);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+.button:hover {
+  background: var(--ink);
+}
+
+/* Decorative bar chart */
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  height: 12rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--ink);
+}
+
+.bar {
+  flex: 1;
+  background: var(--sky);
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.bar-1 {
+  height: 25%;
+}
+
+.bar-2 {
+  height: 40%;
+}
+
+.bar-3 {
+  height: 55%;
+}
+
+.bar-4 {
+  height: 75%;
+  background: var(--cobalt);
+}
+
+.bar-5 {
+  height: 100%;
+  background: var(--amber);
+}
+
+/* Skills */
+.skill-groups {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.skill-group h3 {
+  font-size: 1.15rem;
+}
+
+.skill-group ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+/* Experience */
+.timeline {
+  margin: 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 3px solid var(--cobalt);
+  list-style: none;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+}
+
+.timeline h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.1rem;
+}
+
+.timeline p {
+  margin: 0;
+}
+
+.where {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Contact */
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+}
+
+/* Footer */
+.site-footer {
+  max-width: 70rem;
+  margin: 2rem auto 0;
+  padding: 1.5rem 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* Tablet */
+@media (width >= 40rem) {
+  .site-header,
+  main,
+  .site-footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .skill-groups {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop */
+@media (width >= 64rem) {
+  .hero {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: end;
+    padding: 4rem 0 5rem;
+  }
+
+  .chart {
+    height: 18rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
